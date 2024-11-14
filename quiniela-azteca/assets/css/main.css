@@ -1,0 +1,46 @@
+#quinielas-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #006666;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #cceeff;
+}
+
+.quiniela-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #99d6ff;
+    border-radius: 5px;
+    border: 1px solid #006666;
+}
+
+.resultados {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.nombre {
+    margin-left: auto;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.boton-borrar {
+    background-color: #cc3333;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

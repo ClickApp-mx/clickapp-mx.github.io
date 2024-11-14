@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación Móvil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="background: url(./images/bg-2.jpg); background-size: cover; background-position: center top;" class="flex justify-center min-h-screen pt-5">
+
+    <div class="bg-white/90 w-96 rounded-lg shadow-lg p-4 ">
+        <div class="flex items-start justify-center mt-4">
+            <img src="./images/banner_azteca_2.PNG" alt="">
+        </div>
+        <!-- Nombre de la quiniela -->
+        <div class="mt-2 flex flex-row justify-around">
+            <span class="text-base font-bold">Del 14 al 15 de Nov</span>
+            <p class="font-bold text-base">
+                Costo: 
+                <span class="text-rose-500 mx-1 font-extrabold text-base relative inline-block stroke-current">
+                    $20.00
+                    <svg class="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none">
+                        <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" stroke-width="2"></path>
+                    </svg>
+                </span> 
+            </p>
+            <!-- <span class="text-red-500 text-base font-bold">Costo: $20.00</span> -->
+        </div>
+<!-- Inicio Partidor -->
+        <!-- Partidos 1 -->
+        <div class="flex items-center justify-center mt-4 space-x-full">
+            <button id="L1" class="shadow-lg border border-black rounded 
+            w-8 h-8 flex items-center justify-center  basis-1/10">
+                L
+            </button>
+
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/mazatlan.png" alt="Mazatlán" class="w-6 h-6">
+              <span>Mazatlán</span>
+            </div>
+            <button href="#" id="E1" class="shadow-lg border border-black rounded 
+            w-8 h-8 flex items-center justify-center">
+                E
+            </button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/monterrey.png" alt="Monterrey" class="w-6 h-6">
+              <span>Monterrey</span>
+            </div>
+            <button href="#" id="V1" class="shadow-lg border border-black rounded 
+            w-8 h-8 flex items-center justify-center">
+                V
+            </button>
+        </div>
+        <!-- Partidos 2 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L2" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/tijuana.png" alt="Tijuana" class="w-6 h-6">
+                <span>Tijuana</span>
+            </div>
+            <button id="E2" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/toluca.png" alt="Toluca" class="w-6 h-6">
+                <span>Toluca</span>
+            </div>
+            <button id="V2" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 3 -->
+        <div class="flex items-center justify-center mt-2 space-x-4full">
+            <button id="L3" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/guadalajara.png" alt="Guadalajara" class="w-6 h-6">
+                <span>Chivas</span>
+            </div>
+            <button id="E3" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/juarez.png" alt="Juárez" class="w-6 h-6">
+                <span>Juárez</span>
+            </div>
+            <button id="V3" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 4 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L4" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/america.png" alt="América" class="w-6 h-6">
+                <span>América</span>
+            </div>
+            <button id="E4" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/puebla.png" alt="Puebla" class="w-6 h-6">
+                <span>Puebla</span>
+            </div>
+            <button id="V4" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 5 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L5" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/tigres.png" alt="Tigres" class="w-6 h-6">
+                <span>Tigres</span>
+            </div>
+            <button id="E5" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/santos.png" alt="Santos" class="w-6 h-6">
+                <span>Santos</span>
+            </div>
+            <button id="V5" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 6 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L6" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/pumas.png" alt="Pumas" class="w-6 h-6">
+                <span>Pumas</span>
+            </div>
+            <button id="E6" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/sanluis.png" alt="San Luis" class="w-6 h-6">
+                <span>San Luis</span>
+            </div>
+            <button id="V6" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 7 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L7" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/atlas.png" alt="Atlas" class="w-6 h-6">
+                <span>Atlas</span>
+            </div>
+            <button id="E7" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/Pachuca.png" alt="Pachuca" class="w-6 h-6">
+                <span>Pachuca</span>
+            </div>
+            <button id="V7" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 8 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L8" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/arsenalsarandi.png" alt="Arsenal" class="w-6 h-6">
+                <span>Arsenal</span>
+            </div>
+            <button id="E8" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/patronato.png" alt="Patronato" class="w-6 h-6">
+                <span>Patronato</span>
+            </div>
+            <button id="V8" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+        <!-- Partidos 9 -->
+        <div class="flex items-center justify-center mt-2 space-x-full">
+            <button id="L9" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">L</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/chicagofire.png" alt="Chicago Fire" class="w-6 h-6">
+                <span>Chicago F.</span>
+            </div>
+            <button id="E9" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">E</button>
+            <div class="flex items-center space-x-2 mx-2 basis-[35%]">
+                <img src="./images/nyredbulls.png" alt="New York Red Bulls" class="w-6 h-6">
+                <span>New York</span>
+            </div>
+            <button id="V9" class="shadow-lg border border-black rounded w-8 h-8 flex items-center justify-center">V</button>
+        </div>
+<!-- Fin Partidor -->
+
+<!-- Inicio Quiniela -->
+        <div class="bg-gray-100 w-full p-4 gap-4 mt-2 rounded-lg shadow-lg p-1 flex items-center justify-between">
+            <div id="Partido1" style="text-align: center;"></div>
+            <div id="Partido2" style="text-align: center;"></div>
+            <div id="Partido3" style="text-align: center;"></div>
+            <div id="Partido4" style="text-align: center;"></div>
+            <div id="Partido5" style="text-align: center;"></div>
+            <div id="Partido6" style="text-align: center;"></div>
+            <div id="Partido7" style="text-align: center;"></div>
+            <div id="Partido8" style="text-align: center;"></div>
+            <div id="Partido9" style="text-align: center;"></div>
+        </div>
+<!-- Fin Quiniela -->
+
+<!-- Inicio Nombre Quiniela -->
+        <div class="bg-gray-100 w-full gap-4 mt-2 rounded-lg shadow-lg p-1 
+            flex items-center justify-between">
+                <div class="w-2/3">
+                    <label class="text-base text-gray-500">Nombre Quiniela.</label>
+                    <input id="name" type="text" class="block mt-2 w-full rounded-md border-0 py-1.5 pl-7 pr-20 
+                    text-gray-900 ring-1 ring-inset ring-gray-300 
+                    placeholder:text-gray-400 focus:ring-2 focus:ring-inset 
+                    focus:ring-indigo-600 sm:text-sm/6" 
+                    placeholder="Nombre...">
+                </div>
+                <button id="guardarQuiniela" class="bg-amber-500 w-1/3 text-white text-sm font-semibold py-3 rounded-lg shadow-lg hover:bg-amber-600 flex items-center justify-center space-x-2 mx-auto">
+                    <span>Agregar</span>
+                    <img src="./images/agregar-archivo.png" alt="Archivo" class="w-5 h-5">
+                </button>
+
+        </div>
+<!-- Fin Nombre Quiniela -->
+
+<!-- Inicio Botones de Acciones -->
+        <div class="flex align-items-center justify-between gap-2 mt-4 mb-4">
+            <button id="enviarWhatsapp" class="bg-green-500 w-1/3 text-white text-s font-semibold py-3 
+            rounded-lg shadow-lg hover:bg-green-600 basis-[30%] flex items-center justify-center space-x-2">
+                <span>Enviar!</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+            </button>
+            <button id="delTodo" class="bg-rose-500 w-1/3 text-white text-s font-semibold py-3 rounded-lg shadow-lg hover:bg-rose-600 basis-[30%] flex items-center justify-center space-x-2">
+                <span>Borrar.</span>
+                <img src="./images/recycle-bin.png" alt="Bote de basura" class="w-5 h-5">
+            </button>            
+            <button id="alAzar" class="bg-sky-500 w-1/3 text-white text-s font-semibold py-3 rounded-lg shadow-lg hover:bg-sky-600 basis-[30%] flex items-center justify-center space-x-2">
+                <span>Al Azar</span>
+                <img src="./images/dado.png" alt="al azar" class="w-5 h-5">
+            </button>
+        </div>
+<!-- Fin Botones de Acciones -->
+
+        <div id="quinielas-container">
+<!-- Aquí se mostrarán las quinielas generadas -->
+        </div>
+    </div>
+    <!-- <script src="js/quiniela_main.js"></script> -->
+    <script src="./js/quiniela_min.js"></script>
+</body>
+</html>
